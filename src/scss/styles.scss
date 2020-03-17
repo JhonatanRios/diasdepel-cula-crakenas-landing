@@ -1,7 +1,10 @@
+@import '_reset.scss';
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @import '_basics.scss';
-
-
-
-// @import '_landing.scss';
-
-// @import '_mediaqueries.scss';

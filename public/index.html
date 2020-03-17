@@ -4,8 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="./css/bootstrap-grid.min.css.map">
 </head>
 <body>
-  
+  <div class="landing">   
+    <section class="back"></section>
+    <section class="container">
+      <div class="content-start">
+          <div class="row start">
+            <div class="col-sm-12 col-md-6 col-lg-6 start__promotional">   
+                <img class="title" src="./images/title.png" alt="">
+                <img class="logoPromotional" src="./images/logoPromotional.png" alt="">
+                <img class="cine" src="./images/royalCine.png" alt="">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 start__form">
+              <div class="container form">
+                <div class="form__title">
+                  <img class="title" src="./images/titleForm.png" alt="">
+                </div>
+                <div class="form__questions">
+                  <div class="container content-question">
+                    <form class="row question">
+                      <input class="col-12 question__user question__user--name" type="text" id="name" placeholder="Nombre">
+                      <input class="col-12 question__user question__user--lastname" type="text" id="lname"
+                      placeholder="Apellido">
+                      <input class="col-12 question__user question__user--email" type="text" id="email" placeholder="Correo">
+                      <input class="col-12 question__user question__user--submit" type="submit" id="submit" value="Ingresar">
+                    </form>
+                  </div>
+                  <div class="container separator">
+                    <div class="separator__image"></div>
+                  </div>
+                  <div class="container others">
+                    <div class="row other">
+                      <a class="col-12" href="">
+                        <div class="other__bot">
+                          Ingresar con Google
+                        </div>
+                      </a>
+                      <a class="col-12" href="">
+                        <div class="other__bot">
+                          Ingresar con Facebook
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__terms">
+                  <div class="accept">
+                    <input class="accept__check" type="checkbox" name="accept" id="">
+                    <p class="accept__text">Acepto la política de tratamiento de datos <span><a class="link" href="">Enlace</a></span></p>
+                  </div>
+                  <div class="conditions">
+                    <div class="conditions__image"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
