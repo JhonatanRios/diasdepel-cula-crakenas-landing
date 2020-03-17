@@ -282,8 +282,21 @@ $link: #00B2FF;
     .start {
       &__promotional {
         width: 100%;
+        .title {
+          &__image {
+            height: 350px;
+          }
+        }
+        .logoPromotional {
+          &__image {
+            height: 150px;
+          }
+        }
         .cinema {
           margin: 0 0 1em 0;
+          &__image {
+            height: 60px;
+          }
         }
       }
       &__form {
@@ -356,7 +369,7 @@ $link: #00B2FF;
   }
 }
 
-@media all and (min-width: 501px) and (max-width: 770px){
+@media all and (min-width: 601px) and (max-width: 770px){
     .content-start {
         .start {
             &__form {
@@ -437,7 +450,7 @@ $link: #00B2FF;
     }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
   .content-start {
     .start {
       &__promotional {

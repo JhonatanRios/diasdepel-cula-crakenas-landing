@@ -29,6 +29,19 @@ body {
   }
 }
 
+::placeholder {
+  color: $white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: $white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: $white;
+}
+
 .paragraphs {
   font-size: 1.5em;
   font-weight: 200;
@@ -51,7 +64,7 @@ body {
   }
 }
 
-@media all and (min-width: 501px) and (max-width: 770px){
+@media all and (min-width: 601px) and (max-width: 770px){
   .landing {
     .back{
       background-size: contain;
@@ -59,7 +72,7 @@ body {
   }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
   .landing {
     .back{
       background: url('../images/fondoMobile.png');
