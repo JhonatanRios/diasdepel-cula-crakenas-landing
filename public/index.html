@@ -14,52 +14,68 @@
     <section class="container">
       <div class="content-start">
         <div class="row start">
-          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 start__promotional">   
-              <img class="title" src="./images/title.png" alt="">
-              <img class="logoPromotional" src="./images/logoPromotional.png" alt="">
-              <img class="cine" src="./images/royalCine.png" alt="">
-          </div>
-          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 start__form">
-            <div class="container form">
-              <div class="form__title">
-                <img class="title" src="./images/titleForm.png" alt="">
+          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex align-items-center start__promotional">
+            <div class="container">
+              <div class="row flex-column align-items-center justify-content-center">
+                <div class="d-flex justify-content-center title">
+                  <img class="title__image" src="./images/title.png" alt="">
+                </div> 
+                <div class="d-flex justify-content-center logoPromotional">
+                  <img class="logoPromotional__image" src="./images/logoPromotional.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center cinema">
+                  <img class="cinema__image" src="./images/royalCine.png" alt="">
+                </div>
               </div>
-              <div class="form__questions">
-                <div class="container content-question">
-                  <form class="row question">
-                    <input class="col-12 question__user question__user--name" type="text" id="name" placeholder="Nombre">
-                    <input class="col-12 question__user question__user--lastname" type="text" id="lname"
-                    placeholder="Apellido">
-                    <input class="col-12 question__user question__user--email" type="text" id="email" placeholder="Correo">
-                    <input class="col-12 question__user question__user--submit" type="submit" id="submit" value="Ingresar">
-                  </form>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-6 d-flex align-items-center col-xl-6 start__form">
+            <div class="container">
+              <div class="row flex-column align-items-center justify-content-center form">
+                <div class="row justify-content-center form__title">
+                  <img class="title" src="./images/titleForm.png" alt="">
                 </div>
-                <div class="container separator">
-                  <div class="separator__image"></div>
-                </div>
-                <div class="container others">
-                  <div class="row other">
-                    <a class="col-12" href="./hoover.html">
-                      <div class="other__bot">
-                        Ingresar con Google
-                      </div>
-                    </a>
-                    <a class="col-12" href="./hoover.html">
-                      <div class="other__bot">
-                        Ingresar con Facebook
-                      </div>
-                    </a>
+                <div class="row flex-column align-items-center form__questions">
+                  <div class="content-question">
+                    <form class="question">
+                      <input class="col-12 question__user question__user--name" type="text" id="name" placeholder="Nombre">
+                      <input class="col-12 question__user question__user--lastname" type="text" id="lname"
+                      placeholder="Apellido">
+                      <input class="col-12 question__user question__user--email" type="text" id="email" placeholder="Correo">
+                      <input class="col-12 question__user question__user--submit" type="submit" id="submit" value="Ingresar">
+                    </form>
+                  </div>
+                  <div class="container separator">
+                    <div class="separator__image"></div>
+                  </div>
+                  <div class="container others">
+                    <div class="row other">
+                      <a class="col-12" href="./hoover.html">
+                        <div class="other__bot">
+                          Ingresar con Google
+                        </div>
+                      </a>
+                      <a class="col-12" href="./hoover.html">
+                        <div class="other__bot">
+                          Ingresar con Facebook
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="form__terms">
-                <div class="accept">
-                  <input class="accept__check" type="checkbox" name="accept" id="">
-                  <p class="accept__text">Acepto la política de tratamiento de datos <span><a class="link" href="">Enlace</a></span></p>
-                </div>
-                <div class="conditions">
-                  <p class="conditions__text">Para reclamar tu boleta de cine individual 2D gratis, reúne siete (7) empaques de Crakeñas y preséntalos en los teatros de Royal Films. Para reclamar tu combo personal gratis reúne siete (7) empaques de Bridge y preséntalos en los teatros de Royal Films (Confitería). Vigencia de la actividad: marzo 26 a mayo 31 2020 o hasta agotar existencia de premios, lo que ocurra primero. Premios disponibles 30.000 boletas de cine individuales 2D y 30.000 combos personales (crispetas pequeñas saladas de 40g más vaso pequeño de gaseosa de 16 oz). Actividad válida sólo para mayores de edad residentes en Colombia.  Los empaques transparentes no aplican para redención.
-                  <spa class="special">Conoce términos y condiciones <a class="link" href="www.colombina.com" target="_blank">www.colombina.com</a></span></p>
+                <div class="row flex-column align-items-center form__terms">
+                  <div class="accept">
+                    <input class="accept__check" type="checkbox" name="acceptEdad" id="">
+                    <p class="accept__text">Confirmo que soy mayor de edad <span><a class="link" href="">Enlace</a></span></p>
+                  </div>
+                  <div class="accept">
+                    <input class="accept__check" type="checkbox" name="acceptDatos" id="">
+                    <p class="accept__text">Acepto la política de tratamiento de datos <span><a class="link" href="">Enlace</a></span></p>
+                  </div>
+                  <div class="conditions">
+                    <p class="conditions__text">Para reclamar tu boleta de cine individual 2D gratis, reúne siete (7) empaques de Crakeñas y preséntalos en los teatros de Royal Films. Para reclamar tu combo personal gratis reúne siete (7) empaques de Bridge y preséntalos en los teatros de Royal Films (Confitería). Vigencia de la actividad: marzo 26 a mayo 31 2020 o hasta agotar existencia de premios, lo que ocurra primero. Premios disponibles 30.000 boletas de cine individuales 2D y 30.000 combos personales (crispetas pequeñas saladas de 40g más vaso pequeño de gaseosa de 16 oz). Actividad válida sólo para mayores de edad residentes en Colombia.  Los empaques transparentes no aplican para redención.
+                    <spa class="special">Conoce términos y condiciones <a class="link" href="www.colombina.com" target="_blank">www.colombina.com</a></span></p>
+                  </div>
                 </div>
               </div>
             </div>
