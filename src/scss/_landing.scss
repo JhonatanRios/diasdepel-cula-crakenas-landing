@@ -27,7 +27,6 @@ $link: #00B2FF;
         }
         .logoPromotional {
           width: 100%;
-          margin-top: -3em;
           &__image {
             height: 209px;
           }
@@ -104,6 +103,7 @@ $link: #00B2FF;
                   border-radius: 6px;
                   overflow: hidden;
                   text-decoration: none;
+                  margin: 0 0 .5em 0;
                 }
                 &__bot {
                   width: 100%;
@@ -207,9 +207,6 @@ $link: #00B2FF;
     .content-start {
         .start {
           &__promotional {
-            .logoPromotional {
-              margin-top: -4em;
-            }
             .cinema {
               &__image {
                 height: 80px;
@@ -282,276 +279,262 @@ $link: #00B2FF;
 
 @media all and (min-width: 771px) and (max-width: 1200px){
   .content-start {
-      .start {
-        &__promotional {
-          width: 100%;
-          .logoPromotional {
-            margin-top: -4em;
-          }
-          .cinema {
-            margin: 0 0 1em 0;
-          }
+    .start {
+      &__promotional {
+        width: 100%;
+        .cinema {
+          margin: 0 0 1em 0;
         }
-        &__form {
-          padding: 0;
-          .form {
-            width: 80%;
-            &__questions {          
-              .content-question {
-                width: 100%;
-                .question {
-                  &__user {
-                    font-size: 1em;
-                    &--submit {
-                      font-size: 1em;
-                    }
-                  }
-                }
-              }
-              .separator {
-                &__image {
-                  width: 40%;
-                }
-              }
-              .others {
-                width: 100%;
-                .other {
-                  &__bot {
+      }
+      &__form {
+        padding: 0;
+        .form {
+          width: 80%;
+          &__questions {          
+            .content-question {
+              width: 100%;
+              .question {
+                &__user {
+                  font-size: 1em;
+                  &--submit {
                     font-size: 1em;
                   }
                 }
               }
             }
-            &__terms {
+            .separator {
+              &__image {
+                width: 40%;
+                background-size: contain;
+              }
+            }
+            .others {
               width: 100%;
-              .accept {
-                width: 100%;
-                input[type=checkbox] {
-                  margin-top: -.1em;
-                }
-                input[type=checkbox]:before {
-                  width: 10px;
-                  height: 10px;
-                }
-                input[type=checkbox]:checked:before {
-                  width: 10px;
-                  height: 10px;
-                }
-                input[type=checkbox]:checked:after {
-                  height: 8px;
-                }
-                &__text {
-                  font-family: $font;
-                  font-size: .6em;
-                  margin: 0 0 0 1em;
-                  font-weight: 200;
+              .other {
+                &__bot {
+                  font-size: 1em;
                 }
               }
-              .conditions {
-                  width: 100%;
-                  &__text {
-                      font-size: .4em;
-                  }
+            }
+          }
+          &__terms {
+            width: 100%;
+            .accept {
+              width: 100%;
+              margin: 0 0 .5em 0;
+              input[type=checkbox] {
+                margin-top: -.1em;
+              }
+              input[type=checkbox]:before {
+                width: 10px;
+                height: 10px;
+              }
+              input[type=checkbox]:checked:before {
+                width: 10px;
+                height: 10px;
+              }
+              input[type=checkbox]:checked:after {
+                height: 8px;
+              }
+              &__text {
+                font-family: $font;
+                font-size: .6em;
+                margin: 0 0 0 .6em;
+                font-weight: 200;
+              }
+            }
+            .conditions {
+              width: 100%;
+              &__text {
+                font-size: .4em;
               }
             }
           }
         }
       }
+    }
   }
 }
 
 @media all and (min-width: 501px) and (max-width: 770px){
     .content-start {
         .start {
-            &__promotional {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                .title {
-                    width: 80%;
-                }
-                .logoPromotional {
-                    width: 50%;
-                }
-                .cine {
-                    width: 30%;
-                }
-            }
             &__form {
-                padding: 0;
-                .form {
-                    width: 80%;
-                    &__title {
-                        width: 100%;
-                        height: 25%;
+              margin: 1em 0;
+              padding: 0;
+              .form {
+                  width: 80%;
+                  &__title {
+                    width: 100%;
+                    height: 25%;
+                  }
+                  &__questions {          
+                    .content-question {
+                      width: 100%;
+                      .question {
+                        &__user {
+                          font-size: 1em;
+                          &--submit {
+                              font-size: 1em;
+                          }
+                        }
+                      }
                     }
-                    &__questions {          
-                        .content-question {
-                        width: 100%;
-                        .question {
-                            &__user {
-                            font-size: 1em;
-                            &--submit {
-                                font-size: 1em;
-                            }
-                            }
-                        }
-                        }
-                        .separator {
-                            margin: .5em 0 0 0;
-                        &__image {
-                            width: 40%;
-                        }
-                        }
-                        .others {
-                        width: 100%;
-                        .other {
-                            &__bot {
-                            font-size: 1em;
-                            }
-                        }
-                        }
+                    .separator {
+                      margin: .5em 0;
+                      &__image {
+                        width: 30%;
+                      }
                     }
-                    &__terms {
-                        width: 100%;
-                        .accept {
-                        width: 100%;
-                        input[type=checkbox] {
-                            margin-top: -.1em;
+                    .others {
+                      width: 100%;
+                      .other {
+                        &__bot {
+                          font-size: 1em;
                         }
-                        input[type=checkbox]:before {
-                            width: 10px;
-                            height: 10px;
-                        }
-                        input[type=checkbox]:checked:before {
-                            width: 10px;
-                            height: 10px;
-                        }
-                        input[type=checkbox]:checked:after {
-                            height: 8px;
-                        }
-                        &__text {
-                            font-family: $font;
-                            font-size: .6em;
-                            margin: 0 0 0 1em;
-                            font-weight: 200;
-                        }
-                        }
-                        .conditions {
-                            width: 100%;
-                            height: 70%;
-                            &__text {
-                                font-size: .7em;
-                                font-weight: 100;
-                                line-height: 1em;
-                            }
-                        }
+                      }
                     }
-                }
+                  }
+                  &__terms {
+                      width: 100%;
+                      .accept {
+                      width: 100%;
+                      margin: 0 0 .5em 0;
+                      input[type=checkbox] {
+                          margin-top: -.1em;
+                      }
+                      input[type=checkbox]:before {
+                          width: 10px;
+                          height: 10px;
+                      }
+                      input[type=checkbox]:checked:before {
+                          width: 10px;
+                          height: 10px;
+                      }
+                      input[type=checkbox]:checked:after {
+                          height: 8px;
+                      }
+                      &__text {
+                          font-family: $font;
+                          font-size: .6em;
+                          margin: 0 0 0 1em;
+                          font-weight: 200;
+                      }
+                      }
+                      .conditions {
+                          width: 100%;
+                          height: 70%;
+                          &__text {
+                              font-size: .7em;
+                              font-weight: 100;
+                              line-height: 1em;
+                          }
+                      }
+                  }
+              }
             }
         }
     }
 }
 
 @media all and (max-width: 500px) {
-    .content-start {
-        .start {
-            &__promotional {
-                height: fit-content;
-                .title {
-                    width: 90%;
-                    margin-top: 3em;
-                }
-                .logoPromotional {
-                    width: 70%;
-                    margin-top: -2em;
-                }
-                .cine {
-                    width: 30%;
-                    margin-top: 0em;
-                }
-            }
-            &__form {
-                margin-bottom: 1.5em;
-                .form {
-                    width: 90%;
-                    &__title {
-                        margin-top: -2em;
-                    }
-                    &__questions {
-                        .content-question {
-                            width: 100%;
-                            margin-bottom: -1em;
-                            .question {
-                                &__user {
-                                    &--submit {
-                                        font-size: 1.2em;
-                                    }
-                                }
-                            }
-                        }
-                        .separator {
-                            width: 100%;
-                            height: 5%;
-                            &__image {
-                                width: 50%;
-                                background-size: cover;
-                            }
-                        }
-                        .others {
-                            width: 100%;
-                            .other {
-                                height: 100%;
-                                &__bot {
-                                    font-size: 1.2em;
-                                }
-                            }
-                        }
-                    }
-                    &__terms {
-                        .accept {
-                            width: 100%;
-                            input[type=checkbox] {
-                                position: relative;
-                                cursor: pointer;
-                                margin-top: -.4em;
-                            }
-                            input[type=checkbox]:before {
-                                width: 15px;
-                                height: 15px;
-                            }
-                            input[type=checkbox]:checked:before {
-                                width: 15px;
-                                height: 15px;
-                            }
-                            input[type=checkbox]:checked:after {
-                                width: 5px;
-                                height: 8px;
-                            }
-                
-                            &__text {
-                                margin: 0 0 0 .5em;
-                                font-size: .8em;
-                            }
-                        }
-                        .conditions {
-                            width: 100%;
-                            &__text {
-                                text-align: justify;
-                                font-size: .6em;
-                                font-weight: 100;
-                                line-height: 1em;
-                                .link {
-                                    color: $white;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+  .content-start {
+    .start {
+      &__promotional {
+        margin: 1em auto;
+        .title {
+          &__image {
+            height: 240px;
+          }
         }
+        .logoPromotional {
+          &__image {
+            height: 160px;
+          }
+        }
+        .cinema {
+          margin: 0;
+          &__image {
+            height: 45px;
+          }
+        }
+      }
+      &__form {
+        margin: 1.5em auto;
+        .form {
+          width: 90%;
+          &__title {
+            margin-top: 0;
+            .title {
+              height: 190px;
+            }
+          }
+          &__questions {
+            .content-question {
+              width: 100%;
+              .question {
+                &__user {
+                  margin: 0 0 .5em;
+                  &--submit {
+                    margin: 0;
+                    font-size: 1.2em;
+                  }
+                }
+              }
+            }
+            .separator {
+              width: 100%;
+              &__image {
+                width: 40%;
+                background-size: 100%;
+              }
+            }
+            .others {
+              width: 100%;
+              .other {
+                &__bot {
+                  font-size: 1.2em;
+                }
+              }
+            }
+          }
+          &__terms {
+            .accept {
+              width: 100%;
+              margin: 0 0 .5em 0;
+              input[type=checkbox] {
+                position: relative;
+                cursor: pointer;
+                margin-top: -.4em;
+              }
+              input[type=checkbox]:before {
+                width: 15px;
+                height: 15px;
+              }
+              input[type=checkbox]:checked:before {
+                width: 15px;
+                height: 15px;
+              }
+              input[type=checkbox]:checked:after {
+                width: 5px;
+                height: 8px;
+              }
+              &__text {
+                margin: 0 0 0 .5em;
+                font-size: .8em;
+              }
+            }
+            .conditions {
+              width: 100%;
+              &__text {
+                font-size: .6em;
+                font-weight: 100;
+                line-height: 1em;
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }
