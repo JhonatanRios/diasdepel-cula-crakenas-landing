@@ -22,9 +22,11 @@ $link: #00B2FF;
                 width: 100%;
                 .logo {
                     padding: 0 0 0 7em;
+                    margin-bottom: -1em;
                     width: 100%;
                     &__image {
-                        height: 180px;
+                        width: 50%;
+                        height: auto;
                         object-fit: cover;
                     }
                 }
@@ -41,7 +43,8 @@ $link: #00B2FF;
                     padding: 0 .5em 0 0;
                     justify-content: center;
                     &__image {
-                        height: 150px;
+                        width: 100%;
+                        height: auto;
                         object-fit: cover;
                     }
                 }
@@ -56,9 +59,11 @@ $link: #00B2FF;
                     width: 100%;
                     display: flex;
                     padding: 0 8em 0 0;
+                    margin: -1em 0 0 0;
                     justify-content: flex-end;
                     &__image {
-                        height: 100px;
+                        width: 40%;
+                        height: auto;
                         object-fit: cover;
                     }
                 }
@@ -74,7 +79,9 @@ $link: #00B2FF;
             .ticket {
                 width: 100%;
                 &__image {
-                    height: 390px;
+                    width: 90%;
+                    height: auto;
+                    object-fit: cover;
                 }
             }
         }
@@ -84,7 +91,9 @@ $link: #00B2FF;
             .combo {
                 width: 100%;
                 &__image {
-                    height: 390px;
+                    width: 90%;
+                    height: auto;
+                    object-fit: cover;
                 }
             }
         }
@@ -96,12 +105,13 @@ $link: #00B2FF;
             justify-content: center;
             align-items: center;
             .line {
-                width: 60%;
+                width: 100%;
                 position: relative;
                 z-index: 1;
                 &__image {
-                    width: 100%;
-                    height: 10px;
+                    width: 60%;
+                    height: auto;
+                    object-fit: cover;
                 }
             }
             .content-imageProduct {
@@ -114,7 +124,9 @@ $link: #00B2FF;
                     .ticket {
                         width: 100%;
                         &__image {
-                            height: 250px;
+                            width: 80%;
+                            height: auto;
+                            object-fit: cover;
                         }
                     }
                 }
@@ -124,7 +136,9 @@ $link: #00B2FF;
                     .combo {
                         width: 100%;
                         &__image {
-                            height: 300px;
+                            width: 70%;
+                            height: auto;
+                            object-fit: cover;
                         }
                     }
                 }
@@ -133,8 +147,8 @@ $link: #00B2FF;
     }
     .content-cinema {
         width: 100%;
-        height: 1200px;
-        margin: 2em auto 0;
+        height: 1280px;
+        margin: 4em auto 0;
         position: relative;
         .cinema {
             width: 100%;
@@ -143,7 +157,9 @@ $link: #00B2FF;
             .title {
                 width: 100%;
                 &__image {
-                    height: 440px;
+                    width: 70%;
+                    height: auto;
+                    object-fit: cover;
                 }
             }
             .content-map {
@@ -152,8 +168,11 @@ $link: #00B2FF;
                 .map {
                     width: 100%;
                     &__image {
+                        cursor: pointer;
                         display: block;
-                        height: 380px;
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
                     }
                 }
             }
@@ -177,9 +196,9 @@ $link: #00B2FF;
             position: absolute;
             z-index: 1;
             &__image {
-                width: 100%;
                 display: block;
-                height: 850px;
+                width: 100%;
+                height: auto;
                 object-fit: cover;
             }
         }
@@ -190,240 +209,15 @@ $link: #00B2FF;
     .content-start {
         .header {
             width: 100%;
-            margin: 2em auto;
-            box-sizing: border-box;
-            &__logo {
-                display: flex;
-                align-items: center;
-                .content-logo {
-                    width: 100%;
-                    padding: 0 0 0 7em;
-                    .logo {
-                        width: 100%;
-                        &__image {
-                            height: 180px;
-                            object-fit: cover;
-                        }
-                    }
-                }
-            }
-            &__title {
-                display: flex;
-                align-items: center;
-                .content-title {
-                    width: 100%;
-                    .title {
-                        width: 100%;
-                        display: flex;
-                        justify-content: center;
-                        &__image {
-                            height: 150px;
-                            object-fit: cover;
-                        }
-                    }
-                }
-            }
-            &__logocinema {
-                display: flex;
-                align-items: center;
-                .content-logocinema {
-                    width: 100%;
-                    .logocinema {
-                        width: 100%;
-                        display: flex;
-                        padding: 0 8em 0 0;
-                        justify-content: flex-end;
-                        &__image {
-                            height: 100px;
-                            object-fit: cover;
-                        }
-                    }
-                }
-            }
-        }
-        .cabezera {
-            margin: 1em auto;
-            .content-ticket {
-                .ticket {
-                    &__image {
-                        height: 390px;
-                    }
-                }
-            }
-            .content-combo {
-                .combo {
-                    &__image {
-                        height: 390px;
-                    }
-                }
-            }
-            .separator {
-                height: 250px;
-                .line {
-                    width: 60%;
-                    &__image {
-                        height: 10px;
-                    }
-                }
-                .content-imageProduct {
-                    .content-ticket {
-                        .ticket {
-                            &__image {
-                                height: 250px;
-                            }
-                        }
-                    }
-                    .content-combo {
-                        .combo {
-                            &__image {
-                                height: 300px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .content-cinema {
-            height: 1100px;
-            margin: 2em auto 0;
-            .cinema {
-                .content-map {
-                    margin: 2em 0 0 0;
-                    .map {
-                        &__image {
-                            height: 380px;
-                        }
-                    }
-                }
-                .conditions {
-                    width: 65%;
-                }
-            }
-            .backmap {
-                &__image {
-                    height: 770px;
-                }
-            }
-        }
-    }
-}
-
-@media all and (min-width: 771px) and (max-width: 1200px){
-    .content-start {
-        .header {
-            margin: 2em auto;
-            &__logo {
-                .content-logo {
-                    .logo {
-                        padding: 0 0 0 3em;
-                        &__image {
-                            height: 150px;
-                        }
-                    }
-                }
-            }
-            &__title {
-                .content-title {
-                    .title {
-                        &__image {
-                            height: 100px;
-                        }
-                    }
-                }
-            }
-            &__logocinema {
-                .content-logocinema {
-                    .logocinema {
-                        padding: 0 4em 0 0;
-                        &__image {
-                            height: 80px;
-                        }
-                    }
-                }
-            }
-        }
-        .cabezera {
-            margin: 1em auto;
-            .content-ticket {
-                .ticket {
-                    &__image {
-                        height: 390px;
-                    }
-                }
-            }
-            .content-combo {
-                .combo {
-                    &__image {
-                        height: 390px;
-                    }
-                }
-            }
-            .separator {
-                height: 250px;
-                .line {
-                    width: 60%;
-                    &__image {
-                        height: 10px;
-                    }
-                }
-                .content-imageProduct {
-                    .content-ticket {
-                        .ticket {
-                            &__image {
-                                height: 250px;
-                            }
-                        }
-                    }
-                    .content-combo {
-                        .combo {
-                            &__image {
-                                height: 300px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .content-cinema {
-            height: 1100px;
-            margin: 2em auto 0;
-            .cinema {
-                .content-map {
-                    margin: 2em 0 0 0;
-                    .map {
-                        &__image {
-                            height: 380px;
-                        }
-                    }
-                }
-                .conditions {
-                    width: 75%;
-                }
-            }
-            .backmap {
-                &__image {
-                    height: 510px;
-                }
-            }
-        }
-    }
-}
-
-@media all and (min-width: 601px) and (max-width: 770px){
-    .content-start {
-        .header {
             margin: 3em 0 2em 0;
             &__logo {
                 .content-logo {
+                    width: 100%;
                     .logo {
+                        padding: 0 0 0 7em;
                         width: 100%;
-                        display: flex;
-                        justify-content: center;
-                        padding: 0;
                         &__image {
                             width: 60%;
-                            height: auto;
-                            object-fit: cover;
                         }
                     }
                 }
@@ -433,8 +227,184 @@ $link: #00B2FF;
                     .title {
                         &__image {
                             width: 80%;
-                            height: auto;
-                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+            &__logocinema {
+                .content-logocinema {
+                    .logocinema {
+                        padding: 0 8em 0 0;
+                        &__image {
+                            width: 45%;
+                        }
+                    }
+                }
+            }
+        }
+        .cabezera {
+            margin: 1em auto;
+            .content-ticket {
+                .ticket {
+                    &__image {
+                        width: 100%;
+                    }
+                }
+            }
+            .content-combo {
+                .combo {
+                    &__image {
+                        width: 100%;
+                    }
+                }
+            }
+            .separator {
+                .content-imageProduct {
+                    .content-ticket {
+                        .ticket {
+                            &__image {
+                                width: 70%;
+                            }
+                        }
+                    }
+                    .content-combo {
+                        .combo {
+                            &__image {
+                                margin: 0 2em 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .content-cinema {
+            height: 1130px;
+            margin: 2em auto 0;
+            .cinema {
+                .title {
+                    &__image {
+                        width: 60%;
+                    }
+                }
+                .content-map {
+                    margin: 2em 0 0 0;
+                    .map {
+                        &__image {
+                            width: 100%;
+                        }
+                    }
+                }
+                .conditions {
+                    width: 65%;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 871px) and (max-width: 1200px){
+    .content-start {
+        .header {
+            margin: 3em auto 2em;
+            &__logo {
+                .content-logo {
+                    .logo {
+                        padding: 0 0 0 3em;
+                        &__image {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+            &__logocinema {
+                .content-logocinema {
+                    .logocinema {
+                        padding: 0 3em 0 0;
+                        &__image {
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        }
+        .cabezera {
+            margin: 1em auto;
+            .content-ticket {
+                .ticket {
+                    &__image {
+                        width: 100%;
+                    }
+                }
+            }
+            .content-combo {
+                .combo {
+                    &__image {
+                        width: 100%;
+                    }
+                }
+            }
+            .separator {
+                .content-imageProduct {
+                    .content-ticket {
+                        .ticket {
+                            &__image {
+                                width: 90%;
+                            }
+                        }
+                    }
+                    .content-combo {
+                        .combo {
+                            margin: 0 2em 0 0;
+                            &__image {
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .content-cinema {
+            height: 1150px;
+            margin: 2em auto 0;
+            .cinema {
+                .title {
+                    &__image {
+                        width: 80%;
+                    }
+                }
+                .content-map {
+                    margin: 2em 0 0 0;
+                }
+                .conditions {
+                    width: 75%;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 601px) and (max-width: 870px){
+    .content-start {
+        .header {
+            margin: 3em 0 2em 0;
+            &__logo {
+                .content-logo {
+                    .logo {
+                        display: flex;
+                        justify-content: center;
+                        padding: 0;
+                        &__image {
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+            &__title {
+                .content-title {
+                    margin: 1em 0 0 0;
+                    .title {
+                        &__image {
+                            width: 80%;
                         }
                     }
                 }
@@ -448,37 +418,30 @@ $link: #00B2FF;
             .content-ticket {
                 .ticket {
                     &__image {
-                        height: 390px;
+                        width: auto;
                     }
                 }
             }
             .content-combo {
                 .combo {
                     &__image {
-                        height: 390px;
+                        width: auto;
                     }
                 }
             }
             .separator {
-                height: 250px;
-                .line {
-                    width: 60%;
-                    &__image {
-                        height: 10px;
-                    }
-                }
                 .content-imageProduct {
                     .content-ticket {
                         .ticket {
                             &__image {
-                                height: 250px;
+                                width: 100%;
                             }
                         }
                     }
                     .content-combo {
                         .combo {
                             &__image {
-                                height: 300px;
+                                width: 100%;
                             }
                         }
                     }
@@ -487,23 +450,22 @@ $link: #00B2FF;
         }
         .content-cinema {
             height: 1100px;
-            margin: 2em auto 0;
             .cinema {
+                .title {
+                    &__image {
+                        width: 100%;
+                    }
+                }
                 .content-map {
-                    margin: 2em 0 0 0;
+                    margin: 1em 0 0 0;
                     .map {
                         &__image {
-                            height: 380px;
+                            width: 100%;
                         }
                     }
                 }
                 .conditions {
-                    width: 75%;
-                }
-            }
-            .backmap {
-                &__image {
-                    height: 510px;
+                    width: 100%;
                 }
             }
         }
@@ -517,29 +479,17 @@ $link: #00B2FF;
             &__logo {
                 .content-logo {
                     .logo {
-                        width: 100%;
                         display: flex;
                         justify-content: center;
                         padding: 0;
                         &__image {
                             width: 70%;
-                            height: auto;
-                            object-fit: cover;
                         }
                     }
                 }
             }
             &__title {
-                margin: 1em auto;
-                .content-title {
-                    .title {
-                        &__image {
-                            width: 85%;
-                            height: auto;
-                            object-fit: cover;
-                        }
-                    }
-                }
+                margin: 2em auto 0;
             }
             &__logocinema {
                 display: none;
@@ -550,37 +500,37 @@ $link: #00B2FF;
             .content-ticket {
                 .ticket {
                     &__image {
-                        height: 170px;
+                        width: 100%;
                     }
                 }
             }
             .content-combo {
                 .combo {
                     &__image {
-                        height: 170px;
+                        width: 100%;
                     }
                 }
             }
             .separator {
-                height: 160px;
+                height: 150px;
                 .line {
-                    width: 100%;
                     &__image {
-                        height: 10px;
+                        width: 100%;
                     }
                 }
                 .content-imageProduct {
                     .content-ticket {
                         .ticket {
                             &__image {
-                                height: 100px;
+                                width: 100%;
                             }
                         }
                     }
                     .content-combo {
+                        padding: 0 .2em 0 0;
                         .combo {
                             &__image {
-                                height: 150px;
+                                width: 100%;
                             }
                         }
                     }
@@ -592,18 +542,12 @@ $link: #00B2FF;
             margin: 2em auto 0;
             .cinema {
                 .title {
-                    width: 100%;
                     &__image {
-                        height: 240px;
+                        width: 100%;
                     }
                 }
                 .content-map {
                     margin: 1em 0 0 0;
-                    .map {
-                        &__image {
-                            height: 180px;
-                        }
-                    }
                 }
                 .line {
                     display: block;

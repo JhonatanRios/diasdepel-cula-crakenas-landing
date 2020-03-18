@@ -1,0 +1,55 @@
+$font: 'Roboto', sans-serif;
+$purple: #552E89;
+$borde: #5D3EA8;
+$fondoModal: #7130AB;
+$white: #FFF;
+$link: #00B2FF;
+
+.modal{
+    background-color: rgba($fondoModal, .5);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    box-sizing: border-box;
+    pointer-events:none;
+    z-index: 3;
+    .content-info {
+        position: relative;
+        .infoFondo {
+            margin: .5em 0 0 0;
+            position: relative;
+            &__image {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+        .modal-contenido{
+            background-color:aqua;
+            width:300px;
+            padding: 10px 20px;
+            margin: 20% auto;
+            position: absolute;
+        }
+    }
+}
+
+#ticket:target{
+    opacity:1;
+    pointer-events:auto;
+}
+
+@media all and (min-width: 1201px) and (max-width: 1800px){
+}
+
+@media all and (min-width: 771px) and (max-width: 1200px){
+}
+
+@media all and (min-width: 601px) and (max-width: 770px){
+}
+
+@media all and (max-width: 600px) {
+}

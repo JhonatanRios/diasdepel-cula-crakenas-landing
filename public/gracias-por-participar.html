@@ -39,11 +39,11 @@
                 <div class="cabezera">
                     <div class="container">
                         <div class="row">
-                            <div class="col-6 content-ticket">
+                            <a class="col-6 content-ticket" href="#ticket">
                                 <div class="d-flex justify-content-center ticket">
                                     <img class="ticket__image" src="./images/reclamaBoleta.png" alt="">
                                 </div>
-                            </div>
+                            </a>
                             <div class="col-6 content-combo">
                                 <div class="d-flex justify-content-center combo">
                                     <img class="combo__image" src="./images/reclamaCombo.png" alt="">
@@ -81,7 +81,9 @@
                             </div>
                             <div class="content-map">
                                 <div class="d-flex justify-content-center map">
-                                    <img src="./images/map.png" alt="" class="map__image">
+                                    <a href="https://royal-films.com/" target="_blank" class="d-flex justify-content-center">
+                                        <img src="./images/map.png" alt="" class="map__image">
+                                    </a>
                                 </div>
                             </div>
                             <div class="line">
@@ -101,8 +103,19 @@
                 </div>
             </div>
         </section>
-        <div class="modalBoleta">
-            
+        <div id="ticket" class="d-flex justify-content-center align-items-center modal">
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center content-info">
+                    <div class="infoFondo">
+                        <img class="infoFondo__image" src="./images/fondoModal.png" alt="">
+                    </div>
+                    <div class="modal-contenido">
+                        <a href="">X</a>
+                        <h2>Mi primer Modal</h2>
+                        <p>Este es mi primera ventana modal sin utilizar JavaScript.</p>
+                    </div> 
+                </div>
+            </div>
         </div>
     </div>
 </body>
