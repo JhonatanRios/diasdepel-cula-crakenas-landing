@@ -13,10 +13,57 @@ $link: #00B2FF;
     z-index: 2;
     .header {
         width: 100%;
-        height: 200px;
-        margin: 0 auto;
+        margin: 2em auto;
         box-sizing: border-box;
-        background-color: $white;
+        &__logo {
+            display: flex;
+            align-items: center;
+            .content-logo {
+                width: 100%;
+                .logo {
+                    padding: 0 0 0 7em;
+                    width: 100%;
+                    &__image {
+                        height: 180px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        &__title {
+            display: flex;
+            align-items: center;
+            .content-title {
+                width: 100%;
+                .title {
+                    width: 100%;
+                    display: flex;
+                    padding: 0 .5em 0 0;
+                    justify-content: center;
+                    &__image {
+                        height: 150px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        &__logocinema {
+            display: flex;
+            align-items: center;
+            .content-logocinema {
+                width: 100%;
+                .logocinema {
+                    width: 100%;
+                    display: flex;
+                    padding: 0 8em 0 0;
+                    justify-content: flex-end;
+                    &__image {
+                        height: 100px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
     }
     .cabezera {
         width: 100%;
@@ -112,13 +159,6 @@ $link: #00B2FF;
             }
             .line {
                 display: none;
-                width: 100%;
-                margin: 1em auto;
-                &__image {
-                    width: 100%;
-                    height: auto;
-                    object-fit: cover;
-                } 
             }
             .conditions {
                 width: 70%;
@@ -128,11 +168,9 @@ $link: #00B2FF;
                 a {
                     cursor: pointer;
                     text-decoration: none;
-                    //color: $white;
                 }
             }
         }
-
         .backmap {
             width: 100%;
             bottom: 0;
@@ -151,8 +189,57 @@ $link: #00B2FF;
 @media all and (min-width: 1201px) and (max-width: 1800px){
     .content-start {
         .header {
-            height: 200px;
-            margin: 0 auto;
+            width: 100%;
+            margin: 2em auto;
+            box-sizing: border-box;
+            &__logo {
+                display: flex;
+                align-items: center;
+                .content-logo {
+                    width: 100%;
+                    padding: 0 0 0 7em;
+                    .logo {
+                        width: 100%;
+                        &__image {
+                            height: 180px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+            &__title {
+                display: flex;
+                align-items: center;
+                .content-title {
+                    width: 100%;
+                    .title {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        &__image {
+                            height: 150px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+            &__logocinema {
+                display: flex;
+                align-items: center;
+                .content-logocinema {
+                    width: 100%;
+                    .logocinema {
+                        width: 100%;
+                        display: flex;
+                        padding: 0 8em 0 0;
+                        justify-content: flex-end;
+                        &__image {
+                            height: 100px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
         }
         .cabezera {
             margin: 1em auto;
@@ -224,8 +311,36 @@ $link: #00B2FF;
 @media all and (min-width: 771px) and (max-width: 1200px){
     .content-start {
         .header {
-            height: 200px;
-            margin: 0 auto;
+            margin: 2em auto;
+            &__logo {
+                .content-logo {
+                    .logo {
+                        padding: 0 0 0 3em;
+                        &__image {
+                            height: 150px;
+                        }
+                    }
+                }
+            }
+            &__title {
+                .content-title {
+                    .title {
+                        &__image {
+                            height: 100px;
+                        }
+                    }
+                }
+            }
+            &__logocinema {
+                .content-logocinema {
+                    .logocinema {
+                        padding: 0 4em 0 0;
+                        &__image {
+                            height: 80px;
+                        }
+                    }
+                }
+            }
         }
         .cabezera {
             margin: 1em auto;
@@ -297,8 +412,36 @@ $link: #00B2FF;
 @media all and (min-width: 601px) and (max-width: 770px){
     .content-start {
         .header {
-            height: 200px;
-            margin: 0 auto;
+            margin: 3em 0 2em 0;
+            &__logo {
+                .content-logo {
+                    .logo {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        padding: 0;
+                        &__image {
+                            width: 60%;
+                            height: auto;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+            &__title {
+                .content-title {
+                    .title {
+                        &__image {
+                            width: 80%;
+                            height: auto;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+            &__logocinema {
+                display: none;
+            }
         }
         .cabezera {
             margin: 1em auto;
@@ -370,8 +513,37 @@ $link: #00B2FF;
 @media all and (max-width: 600px) {
     .content-start {
         .header {
-            height: 200px;
-            margin: 0 auto;
+            margin: 2em 0 1em 0;
+            &__logo {
+                .content-logo {
+                    .logo {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        padding: 0;
+                        &__image {
+                            width: 70%;
+                            height: auto;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+            &__title {
+                margin: 1em auto;
+                .content-title {
+                    .title {
+                        &__image {
+                            width: 85%;
+                            height: auto;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+            &__logocinema {
+                display: none;
+            }
         }
         .cabezera {
             margin: 1em auto;
@@ -435,6 +607,13 @@ $link: #00B2FF;
                 }
                 .line {
                     display: block;
+                    width: 100%;
+                    margin: 1em auto;
+                    &__image {
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                    } 
                 }
                 .conditions {
                     width: 100%;
