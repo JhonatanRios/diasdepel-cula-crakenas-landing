@@ -23,20 +23,26 @@ $link: #00B2FF;
       .title {
         width: 100%;
         &__image {
-          height: 450px;
+          width: 50%;
+          height: auto;
+          object-fit: cover;
         }
       }
       .logoPromotional {
         width: 100%;
         &__image {
-          height: 209px;
+          width: 30%;
+          height: auto;
+          object-fit: cover;
         }
       }
       .cinema {
         width: 100%;
-        margin-top: 1em;
+        margin: .5em 0 .8em;
         &__image {
-          height: 80px;
+          width: 20%;
+          height: auto;
+          object-fit: cover;
         }
       }
     }
@@ -48,8 +54,11 @@ $link: #00B2FF;
         margin: 0 auto;
         &__title {
           width: 100%;
+          margin: 0 0 1em 0;
           .title {
-            height: 190px;
+            width: 50%;
+            height: auto;
+            object-fit: cover;
           }
         }
         &__questions {
@@ -252,16 +261,14 @@ $link: #00B2FF;
 @media all and (min-width: 1201px) and (max-width: 1800px){
   .content-start {
     .start {
-      &__promotional {
-        .cinema {
-          &__image {
-            height: 80px;
-          }
-        }
-      }
       &__form {
         .form {
           width: 80%;
+          &__title {
+            .title {
+              width: 60%;
+            }
+          }
           &__questions {          
             .content-question {
               width: 100%;
@@ -309,25 +316,23 @@ $link: #00B2FF;
   }
 }
 
-@media all and (min-width: 771px) and (max-width: 1200px){
+@media all and (min-width: 871px) and (max-width: 1200px){
   .content-start {
     .start {
       &__promotional {
-        width: 100%;
         .title {
           &__image {
-            height: 350px;
+            width: 80%;
           }
         }
         .logoPromotional {
           &__image {
-            height: 150px;
+            width: 50%;
           }
         }
         .cinema {
-          margin: 0 0 1em 0;
           &__image {
-            height: 60px;
+            width: 30%;
           }
         }
       }
@@ -335,6 +340,11 @@ $link: #00B2FF;
         padding: 0;
         .form {
           width: 80%;
+          &__title {
+            .title {
+              width: 100%;
+            }
+          }
           &__questions {          
             .content-question {
               width: 100%;
@@ -349,7 +359,7 @@ $link: #00B2FF;
             }
             .separator {
               &__image {
-                width: 40%;
+                width: 50%;
                 background-size: contain;
               }
             }
@@ -390,31 +400,23 @@ $link: #00B2FF;
   }
 }
 
-@media all and (min-width: 601px) and (max-width: 770px){
+@media all and (min-width: 601px) and (max-width: 870px){
   .content-start {
     .start {
       &__promotional {
-        width: 100%;
-        display: flex;
         .title {
-          width: 100%;
           &__image {
             width: 100%;
-            height: auto;
-            object-fit: cover;
           }
         }
         .logoPromotional {
-          width: 100%;
           &__image {
-            height: 209px;
+            width: 70%;
           }
         }
         .cinema {
-          width: 100%;
-          margin-top: 1em;
           &__image {
-            height: 80px;
+            width: 40%;
           }
         }
       }
@@ -424,8 +426,9 @@ $link: #00B2FF;
         .form {
           width: 80%;
           &__title {
-            width: 100%;
-            height: 25%;
+            .title {
+              width: 100%;
+            }
           }
           &__questions {          
             .content-question {
@@ -442,7 +445,8 @@ $link: #00B2FF;
             .separator {
               margin: .5em 0;
               &__image {
-                width: 30%;
+                width: 40%;
+                background-size: contain;
               }
             }
             .others {
@@ -489,21 +493,20 @@ $link: #00B2FF;
   .content-start {
     .start {
       &__promotional {
-        margin: 1em auto;
+        margin: 2em 0 0 0;
         .title {
           &__image {
-            height: 240px;
+            width: 100%;
           }
         }
         .logoPromotional {
           &__image {
-            height: 160px;
+            width: 80%;
           }
         }
         .cinema {
-          margin: 0;
           &__image {
-            height: 45px;
+            width: 40%;
           }
         }
       }
@@ -512,9 +515,8 @@ $link: #00B2FF;
         .form {
           width: 90%;
           &__title {
-            margin-top: 0;
             .title {
-              height: 190px;
+              width: 100%;
             }
           }
           &__questions {
