@@ -18,6 +18,12 @@ body {
   width: 100%;
   font-family: $font;
   margin: 0 auto;
+  height: 100vh;
+
+  .content-start{
+    height: 100%;
+  }
+
   .back{
     width: 100%;
     height: 800px;
