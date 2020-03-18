@@ -6,7 +6,6 @@ $link: #00B2FF;
 
 .content-start {
     width: 100%;
-    height: 100%;
     box-sizing: border-box;
     position: absolute;
     top: 0;
@@ -45,7 +44,6 @@ $link: #00B2FF;
         .separator {
             width: 100%;
             height: 250px;
-            //margin: 1em auto;
             position: relative;
             display: flex;
             justify-content: center;
@@ -88,7 +86,7 @@ $link: #00B2FF;
     }
     .content-cinema {
         width: 100%;
-        height: 1600px;
+        height: 1200px;
         margin: 2em auto 0;
         position: relative;
         .cinema {
@@ -97,39 +95,335 @@ $link: #00B2FF;
             z-index: 2;
             .title {
                 width: 100%;
+                &__image {
+                    height: 440px;
+                }
             }
             .content-map {
                 width: 100%;
-                height: 380px;
                 margin: 2em 0 0 0;
                 .map {
                     width: 100%;
                     &__image {
+                        display: block;
                         height: 380px;
                     }
                 }
             }
+            .conditions {
+                width: 70%;
+                margin: 2em auto;
+                text-align: center;
+                font-family: $font;
+            }
         }
+
         .backmap {
             width: 100%;
             bottom: 0;
             position: absolute;
             z-index: 1;
             &__image {
-                height: 1600px;
+                width: 100%;
+                display: block;
+                height: 850px;
             }
         }
     }
 }
 
 @media all and (min-width: 1201px) and (max-width: 1800px){
+    .content-start {
+        .header {
+            height: 200px;
+            margin: 0 auto;
+        }
+        .cabezera {
+            margin: 1em auto;
+            .content-ticket {
+                .ticket {
+                    &__image {
+                        height: 390px;
+                    }
+                }
+            }
+            .content-combo {
+                .combo {
+                    &__image {
+                        height: 390px;
+                    }
+                }
+            }
+            .separator {
+                height: 250px;
+                .line {
+                    width: 60%;
+                    &__image {
+                        height: 10px;
+                    }
+                }
+                .content-imageProduct {
+                    .content-ticket {
+                        .ticket {
+                            &__image {
+                                height: 250px;
+                            }
+                        }
+                    }
+                    .content-combo {
+                        .combo {
+                            &__image {
+                                height: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .content-cinema {
+            height: 1100px;
+            margin: 2em auto 0;
+            .cinema {
+                .content-map {
+                    margin: 2em 0 0 0;
+                    .map {
+                        &__image {
+                            height: 380px;
+                        }
+                    }
+                }
+                .conditions {
+                    width: 65%;
+                }
+            }
+            .backmap {
+                &__image {
+                    height: 770px;
+                }
+            }
+        }
+    }
 }
 
 @media all and (min-width: 771px) and (max-width: 1200px){
+    .content-start {
+        .header {
+            height: 200px;
+            margin: 0 auto;
+        }
+        .cabezera {
+            margin: 1em auto;
+            .content-ticket {
+                .ticket {
+                    &__image {
+                        height: 390px;
+                    }
+                }
+            }
+            .content-combo {
+                .combo {
+                    &__image {
+                        height: 390px;
+                    }
+                }
+            }
+            .separator {
+                height: 250px;
+                .line {
+                    width: 60%;
+                    &__image {
+                        height: 10px;
+                    }
+                }
+                .content-imageProduct {
+                    .content-ticket {
+                        .ticket {
+                            &__image {
+                                height: 250px;
+                            }
+                        }
+                    }
+                    .content-combo {
+                        .combo {
+                            &__image {
+                                height: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .content-cinema {
+            height: 1100px;
+            margin: 2em auto 0;
+            .cinema {
+                .content-map {
+                    margin: 2em 0 0 0;
+                    .map {
+                        &__image {
+                            height: 380px;
+                        }
+                    }
+                }
+                .conditions {
+                    width: 75%;
+                }
+            }
+            .backmap {
+                &__image {
+                    height: 510px;
+                }
+            }
+        }
+    }
 }
 
-@media all and (min-width: 501px) and (max-width: 770px){
+@media all and (min-width: 601px) and (max-width: 770px){
+    .content-start {
+        .header {
+            height: 200px;
+            margin: 0 auto;
+        }
+        .cabezera {
+            margin: 1em auto;
+            .content-ticket {
+                .ticket {
+                    &__image {
+                        height: 390px;
+                    }
+                }
+            }
+            .content-combo {
+                .combo {
+                    &__image {
+                        height: 390px;
+                    }
+                }
+            }
+            .separator {
+                height: 250px;
+                .line {
+                    width: 60%;
+                    &__image {
+                        height: 10px;
+                    }
+                }
+                .content-imageProduct {
+                    .content-ticket {
+                        .ticket {
+                            &__image {
+                                height: 250px;
+                            }
+                        }
+                    }
+                    .content-combo {
+                        .combo {
+                            &__image {
+                                height: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .content-cinema {
+            height: 1100px;
+            margin: 2em auto 0;
+            .cinema {
+                .content-map {
+                    margin: 2em 0 0 0;
+                    .map {
+                        &__image {
+                            height: 380px;
+                        }
+                    }
+                }
+                .conditions {
+                    width: 75%;
+                }
+            }
+            .backmap {
+                &__image {
+                    height: 510px;
+                }
+            }
+        }
+    }
 }
 
 @media all and (max-width: 600px) {
+    .content-start {
+        .header {
+            height: 200px;
+            margin: 0 auto;
+        }
+        .cabezera {
+            margin: 1em auto;
+            .content-ticket {
+                .ticket {
+                    &__image {
+                        height: 170px;
+                    }
+                }
+            }
+            .content-combo {
+                .combo {
+                    &__image {
+                        height: 170px;
+                    }
+                }
+            }
+            .separator {
+                height: 160px;
+                .line {
+                    width: 100%;
+                    &__image {
+                        height: 10px;
+                    }
+                }
+                .content-imageProduct {
+                    .content-ticket {
+                        .ticket {
+                            &__image {
+                                height: 100px;
+                            }
+                        }
+                    }
+                    .content-combo {
+                        .combo {
+                            &__image {
+                                height: 150px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .content-cinema {
+            height: 0px;
+            margin: 2em auto 0;
+            .cinema {
+                .title {
+                    width: 100%;
+                    &__image {
+                        height: 240px;
+                    }
+                }
+                .content-map {
+                    margin: 1em 0 0 0;
+                    .map {
+                        &__image {
+                            height: 180px;
+                        }
+                    }
+                }
+                .conditions {
+                    width: 100%;
+                }
+            }
+            .backmap {
+                display: none;
+            }
+        }
+    }
 }
