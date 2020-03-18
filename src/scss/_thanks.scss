@@ -110,11 +110,26 @@ $link: #00B2FF;
                     }
                 }
             }
+            .line {
+                display: none;
+                width: 100%;
+                margin: 1em auto;
+                &__image {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                } 
+            }
             .conditions {
                 width: 70%;
                 margin: 2em auto;
                 text-align: center;
                 font-family: $font;
+                a {
+                    cursor: pointer;
+                    text-decoration: none;
+                    //color: $white;
+                }
             }
         }
 
@@ -127,6 +142,7 @@ $link: #00B2FF;
                 width: 100%;
                 display: block;
                 height: 850px;
+                object-fit: cover;
             }
         }
     }
@@ -417,8 +433,16 @@ $link: #00B2FF;
                         }
                     }
                 }
+                .line {
+                    display: block;
+                }
                 .conditions {
                     width: 100%;
+                    margin: 0 0 1em 0;
+                    color: $white;
+                    a {
+                        color: $white;
+                    }
                 }
             }
             .backmap {

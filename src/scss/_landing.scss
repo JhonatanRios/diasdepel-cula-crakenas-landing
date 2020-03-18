@@ -103,6 +103,8 @@ $link: #00B2FF;
                 border-radius: 6px;
                 overflow: hidden;
                 text-decoration: none;
+              }
+              #loginWithFacebook {
                 margin: 0 0 .5em 0;
               }
               &__bot {
@@ -163,7 +165,7 @@ $link: #00B2FF;
               content: "";
               display: block;
               width: 5px;
-              height: 9px;
+              height: 10px;
               border: solid white;
               border-width: 0 2px 2px 0;
               -webkit-transform: rotate(45deg);
@@ -289,20 +291,6 @@ $link: #00B2FF;
             width: 100%;
             .accept {
               width: 100%;
-              input[type=checkbox] {
-                margin-top: -.1em;
-              }
-              input[type=checkbox]:before {
-                width: 10px;
-                height: 10px;
-              }
-              input[type=checkbox]:checked:before {
-                width: 10px;
-                height: 10px;
-              }
-              input[type=checkbox]:checked:after {
-                height: 8px;
-              }
               &__text {
                 font-family: $font;
                 font-size: .9em;
@@ -381,17 +369,6 @@ $link: #00B2FF;
               input[type=checkbox] {
                 margin-top: -.1em;
               }
-              input[type=checkbox]:before {
-                width: 10px;
-                height: 10px;
-              }
-              input[type=checkbox]:checked:before {
-                width: 10px;
-                height: 10px;
-              }
-              input[type=checkbox]:checked:after {
-                height: 8px;
-              }
               &__text {
                 font-family: $font;
                 font-size: .75em;
@@ -413,84 +390,98 @@ $link: #00B2FF;
 }
 
 @media all and (min-width: 601px) and (max-width: 770px){
-    .content-start {
-        .start {
-            &__form {
-              margin: 1em 0;
-              padding: 0;
-              .form {
-                  width: 80%;
-                  &__title {
-                    width: 100%;
-                    height: 25%;
+  .content-start {
+    .start {
+      &__promotional {
+        width: 100%;
+        display: flex;
+        .title {
+          width: 100%;
+          &__image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+          }
+        }
+        .logoPromotional {
+          width: 100%;
+          &__image {
+            height: 209px;
+          }
+        }
+        .cinema {
+          width: 100%;
+          margin-top: 1em;
+          &__image {
+            height: 80px;
+          }
+        }
+      }
+      &__form {
+        margin: 1em 0;
+        padding: 0;
+        .form {
+          width: 80%;
+          &__title {
+            width: 100%;
+            height: 25%;
+          }
+          &__questions {          
+            .content-question {
+              width: 100%;
+              .question {
+                &__user {
+                  font-size: 1em;
+                  &--submit {
+                      font-size: 1em;
                   }
-                  &__questions {          
-                    .content-question {
-                      width: 100%;
-                      .question {
-                        &__user {
-                          font-size: 1em;
-                          &--submit {
-                              font-size: 1em;
-                          }
-                        }
-                      }
-                    }
-                    .separator {
-                      margin: .5em 0;
-                      &__image {
-                        width: 30%;
-                      }
-                    }
-                    .others {
-                      width: 100%;
-                      .other {
-                        &__bot {
-                          font-size: 1em;
-                        }
-                      }
-                    }
-                  }
-                  &__terms {
-                      width: 100%;
-                      .accept {
-                      width: 100%;
-                      margin: 0 0 .5em 0;
-                      input[type=checkbox] {
-                          margin-top: -.1em;
-                      }
-                      input[type=checkbox]:before {
-                          width: 10px;
-                          height: 10px;
-                      }
-                      input[type=checkbox]:checked:before {
-                          width: 10px;
-                          height: 10px;
-                      }
-                      input[type=checkbox]:checked:after {
-                          height: 8px;
-                      }
-                      &__text {
-                          font-family: $font;
-                          font-size: .6em;
-                          margin: 0 0 0 1em;
-                          font-weight: 200;
-                      }
-                      }
-                      .conditions {
-                          width: 100%;
-                          height: 70%;
-                          &__text {
-                              font-size: .7em;
-                              font-weight: 100;
-                              line-height: 1.2em;
-                          }
-                      }
-                  }
+                }
               }
             }
+            .separator {
+              margin: .5em 0;
+              &__image {
+                width: 30%;
+              }
+            }
+            .others {
+              width: 100%;
+              .other {
+                &__bot {
+                  font-size: 1em;
+                }
+              }
+            }
+          }
+          &__terms {
+            width: 100%;
+            .accept {
+              width: 100%;
+              margin: 0 0 .5em 0;
+              input[type=checkbox] {
+                margin-top: -.1em;
+              }
+              &__text {
+                font-family: $font;
+                font-size: .6em;
+                margin: 0 0 0 1em;
+                font-weight: 200;
+              }
+            }
+            .conditions {
+              width: 100%;
+              height: 70%;
+              &__text {
+                font-size: .7em;
+                font-weight: 100;
+                line-height: 1.2em;
+              }
+            }
+          }
         }
+      }
     }
+  }
 }
 
 @media all and (max-width: 600px) {
@@ -558,23 +549,6 @@ $link: #00B2FF;
             .accept {
               width: 100%;
               margin: 0 0 .5em 0;
-              input[type=checkbox] {
-                position: relative;
-                cursor: pointer;
-                margin-top: -.4em;
-              }
-              input[type=checkbox]:before {
-                width: 15px;
-                height: 15px;
-              }
-              input[type=checkbox]:checked:before {
-                width: 15px;
-                height: 15px;
-              }
-              input[type=checkbox]:checked:after {
-                width: 5px;
-                height: 8px;
-              }
               &__text {
                 margin: 0 0 0 .5em;
                 font-size: .8em;
