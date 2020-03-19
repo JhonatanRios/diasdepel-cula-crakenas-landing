@@ -20,16 +20,13 @@ body {
   width: 100%;
   font-family: $font;
   margin: 0 auto;
-
   img{
-
     user-drag: none; 
-user-select: none;
--moz-user-select: none;
--webkit-user-drag: none;
--webkit-user-select: none;
--ms-user-select: none;
-
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
   .back{
     width: 55%;
