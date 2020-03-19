@@ -20,50 +20,61 @@ document.addEventListener("DOMContentLoaded", e => {
 
   function LoginByForm() {
 
-    console.log('Registering using form data...')
+    if (formName.value != "" && formLastName.value != "" && formEmail.value != "") {
 
-    if (checkBoxAge.checked && checkboxTyC.checked) {
+      if (checkBoxAge.checked && checkboxTyC.checked) {
 
-      formContent.style.display = "none";
-      formLoading.style.display = "block";
+        formContent.style.display = "none";
+        formLoading.style.display = "block";
 
-      let userFormat = {
-        id: (formID.value == "") ? ID() : formID.value,
-        first_name: formName.value,
-        last_name: formLastName.value,
-        email: formEmail.value,
-        picture: formPicture.value,
-        login: formLogin.value,
-        created_at: new Date()
+        let userFormat = {
+          id: (formID.value == "") ? ID() : formID.value,
+          first_name: formName.value,
+          last_name: formLastName.value,
+          email: formEmail.value,
+          picture: formPicture.value,
+          login: formLogin.value,
+          created_at: new Date()
+        }
+
+        console.log(userFormat)
+
+        let params = {
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify(userFormat),
+          method: "POST"
+        };
+        fetch("https://crakenas-royal-films.firebaseapp.com/api/add-user", params)
+          .then(function (res) {
+            return res.json();
+          })
+          .then(function (data) {
+
+            //alert('Usuario registrado, lleva a sgte sección');
+            window.location.href = "./gracias-por-participar.html";
+
+
+          });
+
+      } else {
+        // alert("Es necesario que aceptes nuestros términos y condiciones para participar");
+
+        Swal.fire({
+          icon: 'error',
+          text: 'Es necesario que aceptes nuestros términos y condiciones para participar'
+        }
+        )
+
       }
 
-      console.log(userFormat)
-
-      let params = {
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify(userFormat),
-        method: "POST"
-      };
-      fetch("https://crakenas-royal-films.firebaseapp.com/api/add-user", params)
-        .then(function (res) {
-          return res.json();
-        })
-        .then(function (data) {
-
-          //alert('Usuario registrado, lleva a sgte sección');
-          window.location.href = "./gracias-por-participar.html";
-
-
-        });
-
     } else {
-      // alert("Es necesario que aceptes nuestros términos y condiciones para participar");
 
       Swal.fire({
         icon: 'error',
-        text: 'Es necesario que aceptes nuestros términos y condiciones para participar'
+        text: 'Completa los tres campos solicitados para participar.'
       }
       )
+
 
     }
 
