@@ -240,7 +240,6 @@ $link: #00B2FF;
             }
         }
         .content-cinema {
-            height: 1130px;
             margin: 2em auto 0;
             .cinema {
                 .title {
@@ -273,7 +272,6 @@ $link: #00B2FF;
 }
 
 @media all and (max-width: 991px){
-
     .content-start .header__logo .content-logo .logo{
         padding: 0;
         img{
@@ -578,6 +576,7 @@ $link: #00B2FF;
 
 @media all and (max-width: 768px){
     .content-start .content-cinema {
+        margin: 0;
         .cinema {
             .conditions {
                 font-size: .8em;
@@ -757,6 +756,29 @@ $link: #00B2FF;
                 &__image {
                     width: 90%;
                 }
+            }
+        }
+    }
+    .content-start .content-cinema {
+        margin: 0 auto 0;
+        .cinema {
+            .title {
+                &__image {
+                    width: 60%;
+                }
+            }
+            .content-map {
+                margin: 2em 0 0 0;
+                .map {
+                    &__image {
+                        width: 100%;
+                    }
+                }
+            }
+            .conditions {
+                //width: 100%;
+                //margin: 2em auto;
+                font-size: .8em;
             }
         }
     }
