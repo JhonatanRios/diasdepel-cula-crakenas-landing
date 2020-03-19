@@ -166,16 +166,13 @@ $link: #00B2FF;
     .content-start {
         .header {
             width: 100%;
-            margin: 3em 0 2em 0;
+            margin: 2em 0 3em 0;
             &__logo {
                 .content-logo {
                     width: 100%;
                     .logo {
                         padding: 0 0 0 7em;
                         width: 100%;
-                        // &__image {
-                        //     width: 80%;
-                        // }
                     }
                 }
             }
@@ -293,7 +290,7 @@ $link: #00B2FF;
 
 @media all and (min-width: 871px) and (max-width: 992px){
     .header {
-        margin: 6em 0 2em 0;
+        margin: 4em 0 3em 0;
         &__logo {
             .content-logo {
                 .logo {
@@ -467,6 +464,7 @@ $link: #00B2FF;
         }
         .content-principal {
             .principal {
+                margin: 2em auto;
                 height: 1100px;
                 display: flex;
                 justify-content: center;
