@@ -38,6 +38,10 @@ document.addEventListener("DOMContentLoaded", e => {
         formEmail.value = userFormat.email
         formLogin.value = userFormat.login
         formAvatar.value = userFormat.picture
+
+        formID.scrollIntoView();
+
+        
       });
     });
   });
