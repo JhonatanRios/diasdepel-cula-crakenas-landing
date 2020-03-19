@@ -9,7 +9,9 @@ $link: #00B2FF;
   padding: 0;
   box-sizing: border-box;
 }
-
+html, body{
+  overflow-x: hidden;
+}
 body {
   background-color: $purple;
 }
@@ -19,14 +21,15 @@ body {
   font-family: $font;
   margin: 0 auto;
   .back{
-    width: 100%;
-    height: 800px;
-    position: relative;
-    z-index: 1;
-    display: block;
-    background: url('../images/fondoHome.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 55%;
+    position: absolute;
+    height: 290px;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -73,12 +76,10 @@ body {
   }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 500px) {
   .landing {
     .back{
-      background: url('../images/fondoMobile.png');
-      background-repeat: no-repeat;
-      background-size: contain;
+      width: 100%;
     }
   }
 }

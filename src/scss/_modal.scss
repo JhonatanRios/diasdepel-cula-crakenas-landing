@@ -14,7 +14,7 @@ $link: #00B2FF;
     opacity:0;
     box-sizing: border-box;
     pointer-events:none;
-    background-color: rgba($fondoModal, .5);
+    background-color: rgba(#000, .5);
     z-index: 3;
     .content-info {
         position: relative;
@@ -31,9 +31,11 @@ $link: #00B2FF;
             width: 100%;
             position: absolute;
             &__modal{
-                width: 44%;
+                width: 50%;
                 margin: 0 auto;
                 padding: 1em;
+                background: $fondoModal;
+                z-index: 10000;
                 &__header {
                     z-index: 3;
                     .header {
@@ -280,13 +282,13 @@ $link: #00B2FF;
                     .ticket {
                        width: 100%;
                         &__image {
-                            width: 66%;
+                            width: 100%;
                         }
                     }
                     .combo {
                         width: 100%;
                          &__image {
-                             width: 66%;
+                             width: 100%;
                          }
                      }
                     .line {
