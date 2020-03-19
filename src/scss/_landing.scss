@@ -24,16 +24,12 @@ $link: #00B2FF;
         width: 100%;
         &__image {
           width: 50%;
-          height: auto;
-          object-fit: cover;
         }
       }
       .logoPromotional {
         width: 100%;
         &__image {
           width: 30%;
-          height: auto;
-          object-fit: cover;
         }
       }
       .cinema {
@@ -41,8 +37,6 @@ $link: #00B2FF;
         margin: .5em 0 .8em;
         &__image {
           width: 20%;
-          height: auto;
-          object-fit: cover;
         }
       }
     }
@@ -57,8 +51,6 @@ $link: #00B2FF;
           margin: 0 0 1em 0;
           .title {
             width: 50%;
-            height: auto;
-            object-fit: cover;
           }
         }
         &__questions {

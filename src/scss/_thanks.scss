@@ -26,8 +26,6 @@ $link: #00B2FF;
                     width: 100%;
                     &__image {
                         width: 50%;
-                        height: auto;
-                        object-fit: cover;
                     }
                 }
             }
@@ -44,8 +42,6 @@ $link: #00B2FF;
                     justify-content: center;
                     &__image {
                         width: 100%;
-                        height: auto;
-                        object-fit: cover;
                     }
                 }
             }
@@ -63,8 +59,6 @@ $link: #00B2FF;
                     justify-content: flex-end;
                     &__image {
                         width: 40%;
-                        height: auto;
-                        object-fit: cover;
                     }
                 }
             }
@@ -92,14 +86,10 @@ $link: #00B2FF;
                         width: 100%;
                         &__imageClain {
                             width: 100%;
-                            height: auto;
-                            object-fit: cover;
                         }
                         &__imageProduct {
                             width: 90%;
                             margin: -3em 0 0 0;
-                            height: auto;
-                            object-fit: cover;
                         }
                     }
                 }
@@ -110,14 +100,11 @@ $link: #00B2FF;
                         width: 100%;
                         &__imageClain {
                             width: 100%;
-                            height: auto;
-                            object-fit: cover;
                         }
                         &__imageProduct {
                             width: 80%;
                             margin: -3em .5em 0 0;
                             height: auto;
-                            object-fit: cover;
                         }
                     }
                 }
@@ -130,7 +117,6 @@ $link: #00B2FF;
                 &__image {
                     width: 50%;
                     height: auto;
-                    object-fit: cover;
                 }
             }
         }
@@ -149,7 +135,6 @@ $link: #00B2FF;
                 &__image {
                     width: 70%;
                     height: auto;
-                    object-fit: cover;
                 }
             }
             .content-map {
@@ -162,7 +147,6 @@ $link: #00B2FF;
                         display: block;
                         width: 100%;
                         height: auto;
-                        object-fit: cover;
                     }
                 }
             }
@@ -189,7 +173,6 @@ $link: #00B2FF;
                 display: block;
                 width: 100%;
                 height: auto;
-                object-fit: cover;
             }
         }
     }
@@ -320,6 +303,44 @@ $link: #00B2FF;
                 }
                 .conditions {
                     width: 75%;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 871px) and (max-width: 992px){
+    .header {
+        margin: 6em 0 2em 0;
+        &__logo {
+            .content-logo {
+                .logo {
+                    display: flex;
+                    justify-content: center;
+                    padding: 0;
+                    &__image {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+        &__title {
+            .content-title {
+                margin: 1em 0 0 0;
+                .title {
+                    &__image {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+        &__logocinema {
+            .content-logocinema {
+                .logocinema {
+                    justify-content: center;
+                    &__image {
+                        width: 40%;
+                    }
                 }
             }
         }
@@ -497,7 +518,6 @@ $link: #00B2FF;
                     &__image {
                         width: 100%;
                         height: auto;
-                        object-fit: cover;
                     } 
                 }
                 .conditions {
