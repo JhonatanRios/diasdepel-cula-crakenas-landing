@@ -68,6 +68,13 @@ body {
   font-size: 1em;
 }
 
+.swal2-styled.swal2-confirm{
+  background-color: $purple !important;
+}
+
+.swal2-container{
+  font-family: $font;
+}
 @media all and (min-width: 1201px) and (max-width: 1800px){
   .landing {
     .back{
@@ -131,6 +138,6 @@ body {
 @media all and (max-height: 700px){
 
   .content-start .start {
-    height: auto;
+    height: auto !important;
   }
 }

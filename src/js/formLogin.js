@@ -51,13 +51,20 @@ document.addEventListener("DOMContentLoaded", e => {
         .then(function (data) {
 
           //alert('Usuario registrado, lleva a sgte sección');
-          window.location.href = "../gracias-por-participar.html";
+          window.location.href = "./gracias-por-participar.html";
 
 
         });
 
     } else {
-      alert("Es necesario que aceptes nuestros términos y condiciones para participar");
+      // alert("Es necesario que aceptes nuestros términos y condiciones para participar");
+
+      Swal.fire({
+        icon: 'error',
+        text: 'Es necesario que aceptes nuestros términos y condiciones para participar'
+      }
+      )
+
     }
 
 

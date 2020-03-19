@@ -29,6 +29,7 @@ $link: #00B2FF;
                 z-index: 10000;
                 border-radius: 1em;
                 &__header {
+                    position: relative;
                     z-index: 3;
                     .header {
                         cursor: pointer;
