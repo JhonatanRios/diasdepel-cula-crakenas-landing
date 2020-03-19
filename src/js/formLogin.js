@@ -57,7 +57,14 @@ document.addEventListener("DOMContentLoaded", e => {
         });
 
     } else {
-      alert("Es necesario que aceptes nuestros términos y condiciones para participar");
+      // alert("Es necesario que aceptes nuestros términos y condiciones para participar");
+
+      Swal.fire({
+        icon: 'error',
+        text: 'Es necesario que aceptes nuestros términos y condiciones para participar'
+      }
+      )
+
     }
 
 
