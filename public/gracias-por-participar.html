@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoover</title>
+    <title>Gracias por participar</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css.map">
@@ -36,40 +36,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="cabezera">
-                    <div class="container">
-                        <div class="row">
-                            <a class="col-6 content-ticket" href="#ticket">
-                                <div class="d-flex justify-content-center ticket">
-                                    <img class="ticket__image" src="./images/reclamaBoleta.png" alt="">
+                <div class="content-principal">
+                    <div class="container principal">
+                        <div class="row principal__select">
+                            <a class="col-sm-12 col-md-612 col-lg-6 content-ticket" href="#ticket">
+                                <div class="d-flex flex-column align-items-center justify-content-start ticket">
+                                    <img class="ticket__imageClain" src="./images/reclamaBoleta.png" alt="">
+                                    <img class="ticket__imageProduct" src="./images/boleta.png" alt="">
                                 </div>
                             </a>
-                            <div class="col-6 content-combo">
-                                <div class="d-flex justify-content-center combo">
-                                    <img class="combo__image" src="./images/reclamaCombo.png" alt="">
+                            <a class="col-sm-12 col-md-12 col-lg-6 content-combo" href="#combo">
+                                <div class="d-flex flex-column align-items-center justify-content-start combo">
+                                    <img class="combo__imageClain" src="./images/reclamaCombo.png" alt="">
+                                    <img class="combo__imageProduct" src="./images/crispetas.png" alt="">
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                    </div>
-                    <div class="container">
-                        <div class="separator">
-                            <div class="d-flex justify-content-center line">
-                                <img class="line__image" src="./images/lineneon.png" alt="">
-                            </div>
-                            <div class="content-imageProduct">
-                                <div class="row align-items-center">
-                                    <div class="col-6 content-ticket">
-                                        <div class="d-flex justify-content-center ticket">
-                                            <img class="ticket__image" src="./images/boleta.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-6 content-combo">
-                                        <div class="d-flex justify-content-center combo">
-                                            <img class="combo__image" src="./images/crispetas.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="d-flex justify-content-center line">
+                            <img class="line__image" src="./images/lineneon.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -109,11 +93,51 @@
                     <div class="infoFondo">
                         <img class="infoFondo__image" src="./images/fondoModal.png" alt="">
                     </div>
-                    <div class="modal-contenido">
-                        <a href="">X</a>
-                        <h2>Mi primer Modal</h2>
-                        <p>Este es mi primera ventana modal sin utilizar JavaScript.</p>
-                    </div> 
+                    <div class="info">
+                        <div class="d-flex flex-column justify-content-center info__modal">
+                            <div class="info__modal__header">
+                                <a class="d-flex justify-content-end header" href="">
+                                    <img class="header__close" src="./images/close.png" alt="close">
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-center ticket">
+                                <img class="ticket__image" src="./images/infoBoleta.png" alt="">
+                            </div>
+                            <div class="d-flex justify-content-center line">
+                                <img class="line__image" src="./images/lineneon.png" alt="">
+                            </div>
+                            <div class="conditions">
+                                <p class="conditions__text">Para reclamar tu boleta de cine individual 2D gratis, reúne siete (7) empaques de Crakeñas y preséntalos en los teatros de Royal Films. Para reclamar tu combo personal gratis reúne siete (7) empaques de Bridge y preséntalos en los teatros de Royal Films (Confitería). Vigencia de la actividad: marzo 26 a mayo 31 2020 o hasta agotar existencia de premios, lo que ocurra primero. Premios disponibles 30.000 boletas de cine individuales 2D y 30.000 combos personales (crispetas pequeñas saladas de 40g más vaso pequeño de gaseosa de 16 oz). Actividad válida sólo para mayores de edad residentes en Colombia. Los empaques transparentes no aplican para redención. <span class="special">Conoce términos y condiciones <a class="link" href="www.colombina.com" target="_blank">www.colombina.com</a></span></p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="combo" class="d-flex justify-content-center align-items-center modal">
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center content-info">
+                    <div class="infoFondo">
+                        <img class="infoFondo__image" src="./images/fondoModal.png" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="d-flex flex-column justify-content-center info__modal">
+                            <div class="info__modal__header">
+                                <a class="d-flex justify-content-end header" href="">
+                                    <img class="header__close" src="./images/close.png" alt="close">
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-center combo">
+                                <img class="combo__image" src="./images/infoCombo.png" alt="">
+                            </div>
+                            <div class="d-flex justify-content-center line">
+                                <img class="line__image" src="./images/lineneon.png" alt="">
+                            </div>
+                            <div class="conditions">
+                                <p class="conditions__text">Para reclamar tu boleta de cine individual 2D gratis, reúne siete (7) empaques de Crakeñas y preséntalos en los teatros de Royal Films. Para reclamar tu combo personal gratis reúne siete (7) empaques de Bridge y preséntalos en los teatros de Royal Films (Confitería). Vigencia de la actividad: marzo 26 a mayo 31 2020 o hasta agotar existencia de premios, lo que ocurra primero. Premios disponibles 30.000 boletas de cine individuales 2D y 30.000 combos personales (crispetas pequeñas saladas de 40g más vaso pequeño de gaseosa de 16 oz). Actividad válida sólo para mayores de edad residentes en Colombia. Los empaques transparentes no aplican para redención. <span class="special">Conoce términos y condiciones <a class="link" href="www.colombina.com" target="_blank">www.colombina.com</a></span></p>
+                            </div>
+                        </div> 
+                    </div>
                 </div>
             </div>
         </div>

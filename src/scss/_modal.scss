@@ -6,7 +6,6 @@ $white: #FFF;
 $link: #00B2FF;
 
 .modal{
-    background-color: rgba($fondoModal, .5);
     position:fixed;
     top:0;
     right:0;
@@ -15,6 +14,7 @@ $link: #00B2FF;
     opacity:0;
     box-sizing: border-box;
     pointer-events:none;
+    background-color: rgba($fondoModal, .5);
     z-index: 3;
     .content-info {
         position: relative;
@@ -27,22 +27,166 @@ $link: #00B2FF;
                 object-fit: cover;
             }
         }
-        .modal-contenido{
-            background-color:aqua;
-            width:300px;
-            padding: 10px 20px;
-            margin: 20% auto;
+        .info {
+            width: 100%;
             position: absolute;
+            &__modal{
+                width: 44%;
+                margin: 0 auto;
+                padding: 1em;
+                &__header {
+                    z-index: 3;
+                    .header {
+                        cursor: pointer;
+                        margin: 0em 0 -2em 0;
+                        &__close {
+                            width: 5%;
+                            height: auto;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                .ticket {
+                   width: 100%;
+                   z-index: 2;
+                    &__image {
+                        width: 87%;
+                        height: auto;
+                        object-fit: cover;
+                    }
+                }
+                .combo {
+                    width: 100%;
+                    z-index: 2;
+                     &__image {
+                         width: 87%;
+                         height: auto;
+                         object-fit: cover;
+                     }
+                 }
+                .line {
+                    width: 100%;
+                    margin: .5em 0;
+                    &__image {
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                    }
+                }
+                .conditions {
+                    width: 100%;
+                    &__text {
+                        text-align: justify;
+                        font-size: .6em;
+                        font-weight: 100;
+                        line-height: 1.1em;
+                        color: $white;
+                        .link {
+                            color: $white;
+                        }
+                    }
+                }
+            }
         }
     }
-}
+} 
 
 #ticket:target{
     opacity:1;
     pointer-events:auto;
 }
 
+#combo:target{
+    opacity:1;
+    pointer-events:auto;
+}
+
 @media all and (min-width: 1201px) and (max-width: 1800px){
+    .modal{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        box-sizing: border-box;
+        pointer-events:none;
+        background-color: rgba($fondoModal, .5);
+        z-index: 3;
+        .content-info {
+            position: relative;
+            .infoFondo {
+                margin: .5em 0 0 0;
+                position: relative;
+                &__image {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+            .info {
+                width: 100%;
+                position: absolute;
+                &__modal{
+                    width: 44%;
+                    margin: 0 auto;
+                    padding: 1em;
+                    &__header {
+                        z-index: 3;
+                        .header {
+                            cursor: pointer;
+                            margin: 0em 0 -2em 0;
+                            &__close {
+                                width: 5%;
+                                height: auto;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                    .ticket {
+                       width: 100%;
+                       z-index: 2;
+                        &__image {
+                            width: 87%;
+                            height: auto;
+                            object-fit: cover;
+                        }
+                    }
+                    .combo {
+                        width: 100%;
+                        z-index: 2;
+                         &__image {
+                             width: 87%;
+                             height: auto;
+                             object-fit: cover;
+                         }
+                     }
+                    .line {
+                        width: 100%;
+                        margin: .5em 0;
+                        &__image {
+                            width: 100%;
+                            height: auto;
+                            object-fit: cover;
+                        }
+                    }
+                    .conditions {
+                        width: 100%;
+                        &__text {
+                            text-align: justify;
+                            font-size: .6em;
+                            font-weight: 100;
+                            line-height: 1.1em;
+                            color: $white;
+                            .link {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
 }
 
 @media all and (min-width: 771px) and (max-width: 1200px){

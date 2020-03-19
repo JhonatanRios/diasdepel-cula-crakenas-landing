@@ -197,17 +197,17 @@ $link: #00B2FF;
             }
           }
           .conditions {
-              width: 80%;
-              margin: 0 auto;
-              &__text {
-                  text-align: justify;
-                  font-size: .9em;
-                  font-weight: 100;
-                  line-height: 1.1em;
-                  .link {
-                      color: $white;
-                  }
+            width: 80%;
+            margin: 0 auto;
+            &__text {
+              text-align: justify;
+              font-size: .9em;
+              font-weight: 100;
+              line-height: 1.1em;
+              .link {
+                color: $white;
               }
+            }
           }
         }
       }
@@ -283,7 +283,8 @@ $link: #00B2FF;
             }
             .separator {
               &__image {
-                width: 25%;
+                width: 30%;
+                background-size: 100%;
               }
             }
             .others {
