@@ -31,14 +31,13 @@ $link: #00B2FF;
         }
         &__title {
             display: flex;
+            justify-content: center;
             align-items: center;
             .content-title {
                 width: 100%;
                 .title {
                     width: 100%;
-                    display: flex;
                     padding: 0 .5em 0 0;
-                    justify-content: center;
                     &__image {
                         width: 100%;
                     }
@@ -56,6 +55,7 @@ $link: #00B2FF;
                     padding: 0 8em 0 0;
                     margin: -1em 0 0 0;
                     justify-content: flex-end;
+                    align-items: center;
                     &__image {
                         width: 80%;
                     }
@@ -66,8 +66,8 @@ $link: #00B2FF;
     .content-principal {
         width: 100%;
         .principal {
-            width: 100%;
-            height: 800px;
+            width: 90%;
+            height: 750px;
             display: flex;
             align-items: flex-start;
             justify-content: center;
@@ -197,8 +197,9 @@ $link: #00B2FF;
             }
         }
         .content-principal {
-            height: 850px;
             .principal {
+                width: 90%;
+                height: 750px;
                 &__select {
                     width: 100%;
                     margin: 0 auto;
@@ -231,7 +232,7 @@ $link: #00B2FF;
                 }
                 .line {
                     width: 100%;
-                    margin: 0 0 11em 0;
+                    margin: 0 0 12em 0;
                     z-index: 1;
                     &__image {
                         width: 50%;
@@ -240,7 +241,6 @@ $link: #00B2FF;
             }
         }
         .content-cinema {
-            height: 1130px;
             margin: 2em auto 0;
             .cinema {
                 .title {
@@ -273,7 +273,6 @@ $link: #00B2FF;
 }
 
 @media all and (max-width: 991px){
-
     .content-start .header__logo .content-logo .logo{
         padding: 0;
         img{
@@ -297,6 +296,7 @@ $link: #00B2FF;
                     display: flex;
                     justify-content: center;
                     padding: 0;
+                    align-items: center;
                     &__image {
                         width: 60%;
                     }
@@ -336,6 +336,7 @@ $link: #00B2FF;
                         display: flex;
                         justify-content: center;
                         padding: 0;
+                        align-items: center;
                         &__image {
                             width: 60%;
                         }
@@ -456,7 +457,20 @@ $link: #00B2FF;
                 }
             }
             &__title {
-                margin: 2em auto 0;
+                .content-title {
+                    width: 100%;
+                    .title {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0;
+                        margin: 2em 0;
+                        &__image {
+                            width: 100%;
+                        }
+                    }
+                }   
             }
             &__logocinema {
                 //display: none;
@@ -464,6 +478,7 @@ $link: #00B2FF;
         }
         .content-principal {
             .principal {
+                width: 100%;
                 margin: 2em auto;
                 height: 1100px;
                 display: flex;
@@ -548,7 +563,7 @@ $link: #00B2FF;
     }
 
     .content-start .content-principal .principal {
-       
+       width: 100%;
     }
 }
 
@@ -564,6 +579,7 @@ $link: #00B2FF;
 
 @media all and (max-width: 768px){
     .content-start .content-cinema {
+        margin: 0;
         .cinema {
             .conditions {
                 font-size: .8em;
@@ -575,8 +591,9 @@ $link: #00B2FF;
 //queries de los reclama
 @media all and (min-width: 991px) and (max-width: 1200px){
     .content-start .content-principal {
-        height: 850px;
         .principal {
+            width: 100%;
+            height: 680px;
             &__select {
                 width: 100%;
                 margin: 0 auto;
@@ -609,7 +626,7 @@ $link: #00B2FF;
             }
             .line {
                 width: 100%;
-                margin: 0 0 18em 0;
+                margin: 0 0 11em 0;
                 position: relative;
                 z-index: 1;
                 &__image {
@@ -618,11 +635,44 @@ $link: #00B2FF;
             }
         }
     }
+
+    .content-start .content-cinema {
+        width: 100%;
+        margin: -2em auto 0;
+        position: relative;
+        .cinema {
+            width: 100%;
+            position: relative;
+            z-index: 2;
+            .title {
+                width: 100%;
+                &__image {
+                    width: 60%;
+                }
+            }
+            .content-map {
+                width: 100%;
+                margin: 2em 0 0 0;
+                .map {
+                    width: 100%;
+                    &__image {
+                        cursor: pointer;
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+            .line {
+                display: none;
+            }
+        }
+    }
 }
 
 @media all and (min-width: 768px) and (max-width: 990px){
     .content-start .content-principal {
         .principal {
+            width: 100%;
             height: 502px;
             &__select {
                 width: 100%;
@@ -670,6 +720,7 @@ $link: #00B2FF;
 @media all and (min-width: 601px) and (max-width: 767px){
     .content-start .content-principal {
         .principal {
+            width: 100%;
             height: 1560px;
             &__select {
                 width: 100%;
@@ -711,11 +762,54 @@ $link: #00B2FF;
             }
         }
     }
+    .content-start .content-cinema {
+        margin: 0 auto 0;
+        .cinema {
+            .title {
+                &__image {
+                    width: 60%;
+                }
+            }
+            .content-map {
+                margin: 2em 0 0 0;
+                .map {
+                    &__image {
+                        width: 100%;
+                    }
+                }
+            }
+            .conditions {
+                //width: 100%;
+                //margin: 2em auto;
+                font-size: .8em;
+            }
+        }
+    }
 }
 
 @media all and (min-width: 501px) and (max-width: 600px) {
+    .content-start .header {
+        &__title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .content-title {
+                width: 100%;
+                .title {
+                    width: 100%;
+                    padding: 0;
+                    margin: 1em 0;
+                    &__image {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
     .content-start .content-principal {
         .principal {
+            width: 100%;
             height: 1460px;
             &__select {
                 width: 100%;
@@ -762,6 +856,7 @@ $link: #00B2FF;
 @media all and (min-width: 501px) and (max-width: 564px) {
     .content-start .content-principal {
         .principal {
+            width: 100%;
             height: 1460px;
             &__select {
                 width: 100%;
