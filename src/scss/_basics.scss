@@ -60,21 +60,24 @@ body {
 @media all and (min-width: 1201px) and (max-width: 1800px){
 }
 
-@media all and (min-width: 771px) and (max-width: 1200px){
+@media all and (max-width: 1220px){
   .landing {
     .back{
-      background-size: contain;
+      width: 70%;
+      height: 263px;
     }
   }
 }
 
-@media all and (min-width: 601px) and (max-width: 770px){
+@media all and (max-width: 768px){
   .landing {
     .back{
-      background-size: contain;
+      width: 100%;
+      height: 220px;
     }
   }
 }
+
 
 @media all and (max-width: 500px) {
   .landing {
