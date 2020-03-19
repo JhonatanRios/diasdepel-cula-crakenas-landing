@@ -6,7 +6,7 @@ $link: #00B2FF;
 
 .content-start {
   width: 100%;
-  height: 100%;
+  //height: 100%;
   box-sizing: border-box;
   position: relative;
   z-index: 200;
@@ -485,6 +485,7 @@ $link: #00B2FF;
 @media all and (max-width: 500px) {
   .content-start {
     .start {
+      height: auto !important;
       &__promotional {
         margin: 2em 0 0 0;
         .title {

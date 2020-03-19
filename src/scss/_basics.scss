@@ -138,6 +138,6 @@ body {
 @media all and (max-height: 700px){
 
   .content-start .start {
-    height: auto;
+    height: auto !important;
   }
 }

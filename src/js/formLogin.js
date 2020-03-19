@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", e => {
         .then(function (data) {
 
           //alert('Usuario registrado, lleva a sgte sección');
-          window.location.href = "../gracias-por-participar.html";
+          window.location.href = "./gracias-por-participar.html";
 
 
         });
