@@ -1,10 +1,3 @@
-$font: 'Roboto', sans-serif;
-$purple: #552E89;
-$borde: #5D3EA8;
-$fondoModal: #7130AB;
-$white: #FFF;
-$link: #00B2FF;
-
 .modal{
     position:fixed;
     top:0;
@@ -21,25 +14,21 @@ $link: #00B2FF;
             &__modal{
                 width: 50%;
                 margin: 0 auto;
-                padding: 1em;
-                background: $fondoModal;
+                padding: 2em 1em 1em 1em;
+                background: $backModal;
                 z-index: 10000;
                 border-radius: 1em;
-                &__header {
-                    position: relative;
-                    z-index: 3;
-                    .header {
-                        cursor: pointer;
-                        &__close {
-                            position: absolute;
-                            object-fit: cover;
-                            left: 0;
-                            top: 0;
-                            right: 0;
-                            margin-left: auto;
-                            z-index: 1;
-                            width: 5%;
-                        }
+                position: relative;
+                .header {
+                    cursor: pointer;
+                    &__close {
+                        width: 5%;
+                        top: 20px;
+                        right: 20px;
+                        position: absolute;
+                        margin-left: auto;
+                        object-fit: cover;
+                        z-index: 3;
                     }
                 }
                 .ticket {

@@ -1,17 +1,13 @@
-$font: 'Roboto', sans-serif;
-$purple: #552E89;
-$borde: #5D3EA8;
-$white: #FFF;
-$link: #00B2FF;
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html, body{
   overflow-x: hidden;
 }
+
 body {
   background-color: $purple;
 }
@@ -40,6 +36,9 @@ body {
     margin-right: auto;
     z-index: 1;
   }
+  .backtop{
+    display: none;
+  }
   .backpopcorn {
     display: block;
     width: 100%;
@@ -54,14 +53,14 @@ body {
 
 ::placeholder {
   color: $white;
-  opacity: 1; /* Firefox */
+  opacity: 1;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
  color: $white;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
  color: $white;
 }
 
@@ -136,6 +135,21 @@ body {
   .landing {
     .back{
       width: 100%;
+      top: 165px;
+    }
+    .backtop {
+      display: block;
+      width: 100%;
+      position: absolute;
+      height: 290px;
+      object-fit: cover;
+      left: 0;
+      top: -125px;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 1;
+      transform: rotate(-180deg);
     }
     .backpopcorn {
       display: none;
@@ -144,7 +158,6 @@ body {
 }
 
 @media all and (max-height: 700px){
-
   .content-start .start {
     height: auto !important;
   }
