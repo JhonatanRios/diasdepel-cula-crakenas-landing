@@ -61,10 +61,12 @@
                 background-color: rgba($white, 0.16);
                 -webkit-appearance: none;
                 &--submit {
+                  cursor: pointer;
                   width: 100%;
-                  margin: 0 0 0 0;
+                  margin: 0;
                   height: 50px;
                   font-size: 1.4em;
+                  font-weight: 500;
                   color: $white;
                   background-color: $lightPurple;
                   -webkit-appearance: none;
@@ -84,7 +86,7 @@
               height: 20px;
               background: url('../images/separador.png');
               background-repeat: no-repeat;
-              background-size: cover;
+              background-size: 100%;
             }
           }
           .others {
@@ -115,7 +117,7 @@
                 justify-content: center;
                 align-items: center;
                 font-family: $font;
-                font-weight: 600;
+                font-weight: 700;
                 font-size: 1.4em;
               }
             }
@@ -135,7 +137,7 @@
             input[type=checkbox] {
               position: relative;
               cursor: pointer;
-              margin-top: -.4em;
+              margin-top: -1em;
             }
             input[type=checkbox]:before {
               content: "";
@@ -174,11 +176,12 @@
             &__text {
               font-family: $font;
               margin: 0 0 0 1em;
-              font-weight: 200;
+              font-size: .9em;
+              font-weight: 300;
               .link {
                 text-decoration: none;
                 color: $link;
-                font-weight: 200;
+                font-weight: 500;
               }
             }
           }
@@ -260,17 +263,10 @@
               width: 100%;
               .question {
                 &__user {
-                  //font-size: 1.2em;
                   &--submit {
                     font-size: 1.2em;
                   }
                 }
-              }
-            }
-            .separator {
-              &__image {
-                width: 30%;
-                background-size: 100%;
               }
             }
             .others {
@@ -283,18 +279,11 @@
             }
           }
           &__terms {
-            width: 100%;
             .accept {
               width: 100%;
-              &__text {
-                font-family: $font;
-                font-size: .9em;
-                margin: 0 0 0 1em;
-                font-weight: 200;
-              }
             }
             .conditions {
-                width: 100%;
+              width: 100%;
             }
           }
         }
@@ -306,23 +295,6 @@
 @media all and (min-width: 871px) and (max-width: 1200px){
   .content-start {
     .start {
-      &__promotional {
-        .title {
-          &__image {
-            width: 80%;
-          }
-        }
-        .logoPromotional {
-          &__image {
-            width: 50%;
-          }
-        }
-        .cinema {
-          &__image {
-            width: 30%;
-          }
-        }
-      }
       &__form {
         padding: 0;
         .form {
@@ -347,7 +319,6 @@
             .separator {
               &__image {
                 width: 50%;
-                background-size: contain;
               }
             }
             .others {
@@ -360,18 +331,12 @@
             }
           }
           &__terms {
-            width: 100%;
             .accept {
               width: 100%;
               margin: 0 0 .5em 0;
-              input[type=checkbox] {
-                margin-top: -.1em;
-              }
               &__text {
-                font-family: $font;
                 font-size: .75em;
                 margin: 0 0 0 .6em;
-                font-weight: 200;
               }
             }
             .conditions {
@@ -424,16 +389,16 @@
                 &__user {
                   font-size: 1em;
                   &--submit {
-                      font-size: 1em;
+                    font-size: 1em;
                   }
                 }
               }
             }
             .separator {
+              width: 100%;
               margin: .5em 0;
               &__image {
-                width: 40%;
-                background-size: contain;
+                width: 60%;
               }
             }
             .others {
@@ -446,25 +411,20 @@
             }
           }
           &__terms {
-            width: 100%;
             .accept {
               width: 100%;
               margin: 0 0 .5em 0;
               input[type=checkbox] {
-                margin-top: -.1em;
+                margin-top: -.2em;
               }
               &__text {
-                font-family: $font;
                 font-size: .6em;
-                margin: 0 0 0 1em;
-                font-weight: 200;
               }
             }
             .conditions {
               width: 100%;
               &__text {
                 font-size: .7em;
-                font-weight: 100;
                 line-height: 1.2em;
               }
             }
@@ -481,11 +441,6 @@
       height: auto !important;
       &__promotional {
         margin: 2em 0 0 0;
-        .title {
-          &__image {
-            width: 80%;
-          }
-        }
         .logoPromotional {
           &__image {
             width: 60%;
@@ -524,7 +479,6 @@
               width: 100%;
               &__image {
                 width: 40%;
-                background-size: 100%;
               }
             }
             .others {
@@ -549,8 +503,6 @@
               width: 100%;
               &__text {
                 font-size: .65em;
-                font-weight: 100;
-                line-height: 1.1em;
               }
             }
           }
