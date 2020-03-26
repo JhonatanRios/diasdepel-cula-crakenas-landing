@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", e => {
 
       Swal.fire({
         icon: 'error',
-        text: 'Completa los tres campos solicitados para participar.'
+        text: 'Ingresa tus datos para participar'
       }
       )
 
